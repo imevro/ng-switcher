@@ -17,23 +17,23 @@ $color: rgb(85, 164, 242);
     background: rgb(255, 255, 255);
     display: block;
     border-radius: 25px;
-    border: 1px solid $blue;
+    border: 1px solid $color;
     margin-top: -1px;
     position: absolute;
     transition: left .5s ease;
   }
 
   &.switch-left {
-    .stud {
+    .switch-button {
       left: -1px;
     }
   }
 
   &.switch-right {
-    background: $blue;
-    border-color: $blue;
+    background: $color;
+    border-color: $color;
 
-    .stud {
+    .switch-button {
       left: $width - $size;
     }
   }
