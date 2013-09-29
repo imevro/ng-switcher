@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('theaquaNg').
+angular.module('theaquaNg', ['ng']).
   directive('ngSwitcher', () ->
     require: 'ngModel'
     restrict: 'AE'
