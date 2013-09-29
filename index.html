@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="//rawgithub.com/theaqua/ng-switcher/master/dist/ng-switcher.min.css">
 
     <title>ng-switcher by theaqua</title>
+    <style>
+      .switcher-green {
+
+      }
+
+      .switcher-green .switch-button {
+        border-color: rgb(46, 204, 113);
+      }
+
+      .switcher-green .switch-right {
+        background: rgb(46, 204, 113);
+        border-color: rgb(46, 204, 113);
+      }
+    </style>
   </head>
 
   <body>
@@ -21,6 +35,19 @@
         <h2>Demo</h2>
 
         <div ng-model="switchStatus" ng-switcher></div>
+
+        <h2>Style</h2>
+
+        <p>All styles contained in <a href="//github.com/theaqua/ng-switcher/blob/master/src/ng-switcher.scss">src/ng-switcher.scss</a>. You can style:
+          <ul>
+            <li>Switcher <code>$width</code></li>
+            <li>Button <code>$size</code></li>
+            <li>Border & background <code>$color</code></li>
+          </ul>
+        </p>
+
+        <p>For example:</p>
+        <div class="switcher-green" ng-model="SwitchStatus" ng-switcher></div>
 
         <h2>Installation</h2>
 
