@@ -10,18 +10,31 @@
 
     <title>ng-switcher by theaqua</title>
     <style>
-      .switcher-green {
-
-      }
-
-      .switcher-green .switch-button {
-        border-color: rgb(46, 204, 113);
-      }
-
-      .switcher-green .switch-right {
-        background: rgb(46, 204, 113);
-        border-color: rgb(46, 204, 113);
-      }
+      .switcher-green .switch {
+        position: relative;
+        border: 1px solid #eeeeee;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
+        transition: all .5s ease; }
+        .switcher-green .switch-button {
+          height: 50px;
+          width: 50px;
+          background: white;
+          display: block;
+          border-radius: 25px;
+          border: 1px solid #2ecc71;
+          margin-top: -1px;
+          position: absolute;
+          transition: left .5s ease; }
+        .switcher-green .switch-left .switch-button {
+          left: -1px; }
+        .switcher-green .switch-right {
+          background: #2ecc71;
+          border-color: #2ecc71; }
+          .switcher-green .switch-right .switch-button {
+            left: 50px; }
     </style>
   </head>
 
