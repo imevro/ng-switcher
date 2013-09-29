@@ -40,45 +40,48 @@
 
   <body>
     <div class="container">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="page-header">
-          <h1>ng-switcher</h1>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="page-header">
+            <h1>ng-switcher
+                <small>by <a href="//github.com/theaqua">theaqua</a></small>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <h2>Demo</h2>
+
+          <div ng-model="switchStatus" ng-switcher></div>
+
+          <h2>Style</h2>
+
+          <p>All styles contained in <a href="//github.com/theaqua/ng-switcher/blob/master/src/ng-switcher.scss">src/ng-switcher.scss</a>. You can style:
+            <ul>
+              <li>Switcher <code>$width</code></li>
+              <li>Button <code>$size</code></li>
+              <li>Border & background <code>$color</code></li>
+            </ul>
+          </p>
+
+          <p>For example:</p>
+          <div class="switcher-green" ng-model="SwitchStatus" ng-switcher></div>        
         </div>
 
-        <h2>Demo</h2>
+        <div class="col-md-5">
+          <h2>Installation</h2>
 
-        <div ng-model="switchStatus" ng-switcher></div>
+          <p>Download <a href="//raw.github.com/theaqua/ng-switcher/master/dist/ng-switcher.min.js">ng-switcher.min.js</a> or install with bower</p>
+          <pre>$ bower install ng-switcher</pre>
 
-        <h2>Style</h2>
+          <p>Add module <code>theaquaNg</code> to your AngularJS application</p>
+          <pre>angular.module('app', ['theaquaNg'])</pre>
 
-        <p>All styles contained in <a href="//github.com/theaqua/ng-switcher/blob/master/src/ng-switcher.scss">src/ng-switcher.scss</a>. You can style:
-          <ul>
-            <li>Switcher <code>$width</code></li>
-            <li>Button <code>$size</code></li>
-            <li>Border & background <code>$color</code></li>
-          </ul>
-        </p>
+          <h2>Usage</h2>
 
-        <p>For example:</p>
-        <div class="switcher-green" ng-model="SwitchStatus" ng-switcher></div>
-
-        <h2>Installation</h2>
-
-        <p>Download <a href="//raw.github.com/theaqua/ng-switcher/master/dist/ng-switcher.min.js">ng-switcher.min.js</a> or install with bower</p>
-        <pre>$ bower install ng-switcher</pre>
-
-        <p>Add module <code>theaquaNg</code> to your AngularJS application</p>
-        <pre>angular.module('app', ['theaquaNg'])</pre>
-
-        <h2>Usage</h2>
-
-        <pre>&lt;div ng-switcher ng-model="switchStatus"&gt;&lt;/div&gt;</pre>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+          <pre>&lt;div ng-switcher ng-model="switchStatus"&gt;&lt;/div&gt;</pre>
         </div>
       </div>
     </div>
