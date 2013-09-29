@@ -6,7 +6,7 @@
     "Eugene Rodionov <hello@theaqua.im>"
   ],
   "description": "Simple AngularJS directive for toggle switch",
-  "main": "ng-switcher.js",
+  "main": "ng-switcher.coffee",
   "keywords": [
     "angular",
     "toggle",

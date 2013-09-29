@@ -1,0 +1,40 @@
+$width: 50px;
+$size: 30px;
+$color: rgb(85, 164, 242);
+
+.switch {
+  position: relative;
+  border: 1px solid rgb(238, 238, 238);
+  cursor: pointer;
+  width: $width;
+  height: $size;
+  border-radius: 25px;
+  transition: all .5s ease;
+
+  .switch-button {
+    height: $size;
+    width: $size;
+    background: rgb(255, 255, 255);
+    display: block;
+    border-radius: 25px;
+    border: 1px solid $blue;
+    margin-top: -1px;
+    position: absolute;
+    transition: left .5s ease;
+  }
+
+  &.switch-left {
+    .stud {
+      left: -1px;
+    }
+  }
+
+  &.switch-right {
+    background: $blue;
+    border-color: $blue;
+
+    .stud {
+      left: $width - $size;
+    }
+  }
+}
