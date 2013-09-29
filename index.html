@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app="ngSwitcherApp">
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
@@ -12,7 +11,7 @@
     <title>ng-switcher by theaqua</title>
   </head>
 
-  <body ng-app="ngSwitcherApp">
+  <body>
     <div class="container">
       <div class="col-md-8 col-md-offset-2">
         <div class="page-header">
@@ -21,7 +20,7 @@
 
         <h2>Demo</h2>
 
-        <div ng-switcher ng-model="switchStatus"></div>
+        <div ng-model="switchStatus" ng-switcher></div>
 
         <h2>Installation</h2>
 
@@ -45,7 +44,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-    <script src="//raw.github.com/theaqua/ng-switcher/master/dist/ng-switcher.min.js"></script>
+    <script src="//rawgithub.com/theaqua/ng-switcher/master/dist/ng-switcher.min.js"></script>
     <script src="javascripts/app.js"></script>
   </body>
 </html>
