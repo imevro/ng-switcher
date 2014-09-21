@@ -4,7 +4,7 @@ angular.module('theaquaNg', ['ng']).
   directive('ngSwitcher', () ->
     require: 'ngModel'
     restrict: 'AE'
-    scope: false
+    scope: {}
     template: """<div class="switch" ng-class="{\'switch-left\': !model, \'switch-right\': model}" ng-click="toggle()">
                   <div class="switch-button">&nbsp;</div>
                 </div>"""
